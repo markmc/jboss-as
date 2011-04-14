@@ -27,7 +27,6 @@
   </resources>
 
   <dependencies>
-      <module name="javax.xml.stream.api" />
       <module name="javax.api" />
   </dependencies>
 </module>

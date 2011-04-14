@@ -34,7 +34,6 @@
         <module name="javax.jws.api" />
         <module name="javax.wsdl4j.api" />
         <module name="javax.xml.bind.api" />
-        <module name="javax.xml.stream.api" />
         <module name="javax.xml.ws.api" />
         <module name="org.jboss.ws.api" />
         <module name="org.jboss.ws.spi" />

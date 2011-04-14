@@ -28,6 +28,14 @@
     </resources>
 
     <dependencies>
-        <module name="javax.xml.stream.api" export="true"/>
+        <module name="javax.api" export="false">
+            <exports>
+                <include-set>
+                    <path name="javax/xml/stream"/>
+                    <path name="javax/xml/stream/events"/>
+                    <path name="javax/xml/stream/util"/>
+                </include-set>
+            </exports>
+        </module>
     </dependencies>
 </module>
