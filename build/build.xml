@@ -229,10 +229,6 @@
             <maven-resource group="org.jboss.as" artifact="jboss-as-cli"/>
         </module-def>
 
-        <module-def name="org.jboss.as.connector">
-            <maven-resource group="org.jboss.as" artifact="jboss-as-connector"/>
-        </module-def>
-
         <module-def name="org.jboss.as.controller">
             <maven-resource group="org.jboss.as" artifact="jboss-as-controller"/>
         </module-def>
@@ -329,34 +325,12 @@
             <maven-resource group="org.jboss" artifact="jboss-dmr"/>
         </module-def>
 
-        <module-def name="org.jboss.integration.jboss-jca-spi">
-            <maven-resource group="org.jboss.integration" artifact="jboss-jca-spi"/>
-        </module-def>
-
         <module-def name="org.jboss.integration.jboss-transaction-spi">
             <maven-resource group="org.jboss.integration" artifact="jboss-transaction-spi"/>
         </module-def>
 
         <module-def name="org.jboss.invocation">
             <maven-resource group="org.jboss.invocation" artifact="jboss-invocation"/>
-        </module-def>
-
-        <module-def name="org.jboss.ironjacamar.api">
-            <maven-resource group="org.jboss.ironjacamar" artifact="ironjacamar-common-api"/>
-            <maven-resource group="org.jboss.ironjacamar" artifact="ironjacamar-common-spi"/>
-            <maven-resource group="org.jboss.ironjacamar" artifact="ironjacamar-core-api"/>
-            <maven-resource group="org.jboss.ironjacamar" artifact="ironjacamar-core-spi"/>
-        </module-def>
-
-        <module-def name="org.jboss.ironjacamar.impl">
-            <maven-resource group="org.jboss.ironjacamar" artifact="ironjacamar-common-impl"/>
-            <maven-resource group="org.jboss.ironjacamar" artifact="ironjacamar-core-impl"/>
-            <maven-resource group="org.jboss.ironjacamar" artifact="ironjacamar-deployers-common"/>
-            <maven-resource group="org.jboss.ironjacamar" artifact="ironjacamar-validator"/>
-        </module-def>
-
-        <module-def name="org.jboss.ironjacamar.jdbcadapters">
-            <maven-resource group="org.jboss.ironjacamar" artifact="ironjacamar-jdbc"/>
         </module-def>
 
         <module-def name="org.jboss.jandex">
