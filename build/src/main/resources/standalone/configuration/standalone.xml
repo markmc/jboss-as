@@ -27,7 +27,6 @@
                             urn:jboss:domain:ee:1.0 jboss-ee.xsd
                             urn:jboss:domain:messaging:1.0 jboss-messaging.xsd
                             urn:jboss:domain:naming:1.0 jboss-naming.xsd
-                            urn:jboss:domain:remoting:1.0 jboss-remoting.xsd
                             urn:jboss:domain:threads:1.0 jboss-threads.xsd
                             urn:jboss:domain:transactions:1.0 jboss-txn.xsd
                             urn:jboss:domain:web:1.0 jboss-web.xsd
@@ -40,7 +39,6 @@
         <extension module="org.jboss.as.logging"/>
         <extension module="org.jboss.as.messaging"/>
         <extension module="org.jboss.as.naming"/>
-        <extension module="org.jboss.as.remoting"/>
         <extension module="org.jboss.as.security"/>
         <extension module="org.jboss.as.threads"/>
         <extension module="org.jboss.as.transactions"/>
@@ -94,10 +92,6 @@
             </root-logger>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:threads:1.0">
-            <scheduled-thread-pool name="remoting">
-                <max-threads count="10" per-cpu="20"/>
-                <keepalive-time time="10" unit="seconds"/>
-            </scheduled-thread-pool>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:ee:1.0" />
         <subsystem xmlns="urn:jboss:domain:naming:1.0" />
@@ -110,7 +104,6 @@
                 </security-domain>
             </security-domains>
         </subsystem>
-        <subsystem xmlns="urn:jboss:domain:remoting:1.0" thread-pool="remoting"/>
         <subsystem xmlns="urn:jboss:domain:transactions:1.0">
             <recovery-environment socket-binding="txn-recovery-environment" status-socket-binding="txn-status-manager"/>
             <core-environment socket-binding="txn-socket-process-id"/>
@@ -220,7 +213,6 @@
            <socket-binding name="jndi" port="1099"/>
            <socket-binding name="http" port="8080"/>
            <socket-binding name="https" port="8447"/>
-           <socket-binding name="remoting" port="4447"/>
            <socket-binding name="txn-recovery-environment" port="4712"/>
            <socket-binding name="txn-status-manager" port="4713"/>
            <socket-binding name="txn-socket-process-id" port="4714"/>

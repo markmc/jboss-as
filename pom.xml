@@ -213,7 +213,6 @@
         <module>naming</module>
         <module>process-controller</module>
         <module>protocol</module>
-        <module>remoting</module>
         <module>security</module>
         <module>server</module>
         <module>threads</module>
