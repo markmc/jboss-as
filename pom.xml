@@ -211,7 +211,6 @@
         <module>embedded</module>
         <module>host-controller</module>
         <module>jmx</module>
-        <module>jpa</module>
         <module>logging</module>
         <module>mc</module>
         <module>messaging</module>
