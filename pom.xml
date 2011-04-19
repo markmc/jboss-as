@@ -209,7 +209,6 @@
         <module>embedded</module>
         <module>host-controller</module>
         <module>logging</module>
-        <module>mc</module>
         <module>messaging</module>
         <module>naming</module>
         <module>process-controller</module>
