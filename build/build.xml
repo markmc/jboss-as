@@ -200,10 +200,6 @@
             <maven-resource group="javax.validation" artifact="validation-api"/>
         </module-def>
 
-        <module-def name="javax.ws.rs.api">
-            <maven-resource group="org.jboss.spec.javax.ws.rs" artifact="jboss-jaxrs-api_1.1_spec"/>
-        </module-def>
-
         <module-def name="javax.xml.bind.api">
             <maven-resource group="org.jboss.spec.javax.xml.bind" artifact="jboss-jaxb-api_2.2_spec"/>
         </module-def>
@@ -408,10 +404,6 @@
 
         <module-def name="org.jboss.as.host-controller">
             <maven-resource group="org.jboss.as" artifact="jboss-as-host-controller"/>
-        </module-def>
-
-        <module-def name="org.jboss.as.jaxrs">
-            <maven-resource group="org.jboss.as" artifact="jboss-as-jaxrs"/>
         </module-def>
 
         <module-def name="org.jboss.as.jmx">
@@ -656,22 +648,6 @@
 
         <module-def name="org.jboss.remoting3">
             <maven-resource group="org.jboss.remoting3" artifact="jboss-remoting"/>
-        </module-def>
-
-        <module-def name="org.jboss.resteasy.async-http-servlet-30">
-            <maven-resource group="org.jboss.resteasy" artifact="async-http-servlet-3.0"/>
-        </module-def>
-
-        <module-def name="org.jboss.resteasy.resteasy-jaxrs">
-            <maven-resource group="org.jboss.resteasy" artifact="resteasy-jaxrs" jandex="true"/>
-        </module-def>
-
-        <module-def name="org.jboss.resteasy.resteasy-cdi">
-            <maven-resource group="org.jboss.resteasy" artifact="resteasy-cdi"/>
-        </module-def>
-
-        <module-def name="org.jboss.resteasy.resteasy-jaxb-provider">
-            <maven-resource group="org.jboss.resteasy" artifact="resteasy-jaxb-provider" jandex="true"/>
         </module-def>
 
         <module-def name="org.jboss.shrinkwrap.api">
