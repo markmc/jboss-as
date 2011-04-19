@@ -198,7 +198,6 @@
     <modules>
         <module>build</module>
         <module>build-config</module>
-        <module>cli</module>
         <module>controller</module>
         <module>controller-client</module>
         <module>deployment-repository</module>
