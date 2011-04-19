@@ -267,20 +267,12 @@
             <maven-resource group="org.hornetq" artifact="hornetq-jms"/>
         </module-def>
 
-        <module-def name="org.infinispan">
-            <maven-resource group="org.infinispan" artifact="infinispan-core"/>
-        </module-def>
-
         <module-def name="org.javassist">
             <maven-resource group="javassist" artifact="javassist"/>
         </module-def>
 
         <module-def name="org.jboss.as.cli">
             <maven-resource group="org.jboss.as" artifact="jboss-as-cli"/>
-        </module-def>
-
-        <module-def name="org.jboss.as.clustering">
-            <maven-resource group="org.jboss.as" artifact="jboss-as-clustering"/>
         </module-def>
 
         <module-def name="org.jboss.as.connector">
@@ -603,10 +595,6 @@
 
         <module-def name="org.jboss.xnio">
             <maven-resource group="org.jboss.xnio" artifact="xnio-api"/>
-        </module-def>
-
-        <module-def name="org.jgroups">
-            <maven-resource group="org.jgroups" artifact="jgroups"/>
         </module-def>
 
         <module-def name="org.junit">
