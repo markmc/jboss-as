@@ -436,8 +436,6 @@
             <maven-resource group="org.jboss.as" artifact="jboss-as-arquillian-testenricher-resource"/>
         </module-def>
 
-        <module-def name="org.jboss.as.aggregate" />
-
         <module-def name="org.jboss.as.arquillian.common">
             <maven-resource group="org.jboss.as" artifact="jboss-as-arquillian-common"/>
         </module-def>
