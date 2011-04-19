@@ -417,67 +417,6 @@
         </dependency>
 
         <dependency>
-          <groupId>org.jboss.arquillian</groupId>
-          <artifactId>arquillian-api</artifactId>
-        </dependency>
-
-        <dependency>
-          <groupId>org.jboss.arquillian</groupId>
-          <artifactId>arquillian-impl-base</artifactId>
-        </dependency>
-
-        <dependency>
-          <groupId>org.jboss.arquillian</groupId>
-          <artifactId>arquillian-junit</artifactId>
-        </dependency>
-
-        <dependency>
-          <groupId>org.jboss.arquillian</groupId>
-          <artifactId>arquillian-spi</artifactId>
-        </dependency>
-
-        <dependency>
-          <groupId>org.jboss.arquillian.protocol</groupId>
-          <artifactId>arquillian-protocol-jmx</artifactId>
-        </dependency>
-
-        <dependency>
-          <groupId>org.jboss.arquillian.protocol</groupId>
-          <artifactId>arquillian-protocol-osgi</artifactId>
-        </dependency>
-
-        <dependency>
-           <groupId>org.jboss.arquillian.testenricher</groupId>
-           <artifactId>arquillian-testenricher-resource</artifactId>
-        </dependency>
-
-        <dependency>
-           <groupId>org.jboss.as</groupId>
-           <artifactId>jboss-as-arquillian-testenricher-cdi</artifactId>
-        </dependency>
-
-        <dependency>
-           <groupId>org.jboss.as</groupId>
-           <artifactId>jboss-as-arquillian-processor-jsfunit</artifactId>
-           <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-          <groupId>org.jboss.as</groupId>
-          <artifactId>jboss-as-arquillian-testenricher-resource</artifactId>
-        </dependency>
-
-        <dependency>
-          <groupId>org.jboss.as</groupId>
-          <artifactId>jboss-as-arquillian-protocol-servlet</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jboss.as</groupId>
-            <artifactId>jboss-as-arquillian-service</artifactId>
-        </dependency>
-
-        <dependency>
            <groupId>org.jboss.as</groupId>
            <artifactId>jboss-as-cli</artifactId>
         </dependency>
@@ -723,17 +662,6 @@
         <dependency>
             <groupId>org.jboss.jbossts</groupId>
             <artifactId>jbossjts-integration</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jboss.jsfunit</groupId>
-            <artifactId>jsfunit-arquillian</artifactId>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jboss.jsfunit</groupId>
-            <artifactId>jboss-jsfunit-core</artifactId>
         </dependency>
 
         <dependency>

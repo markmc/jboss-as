@@ -23,7 +23,6 @@
 <domain xmlns="urn:jboss:domain:1.0"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="urn:jboss:domain:1.0 jboss_7_0.xsd
-                            urn:jboss:domain:arquillian:1.0 jboss-arquillian.xsd
                             urn:jboss:domain:connector:1.0 jboss-connector.xsd
                             urn:jboss:domain:datasources:1.0 jboss-datasources.xsd
                             urn:jboss:domain:ejb3:1.0 jboss-ejb3.xsd
@@ -170,10 +169,6 @@
                <properties>
                    <property name="org.jboss.osgi.system.modules">
                    org.apache.log4j,
-                   org.jboss.arquillian.api,
-                   org.jboss.arquillian.junit,
-                   org.jboss.arquillian.protocol.osgi,
-                   org.jboss.arquillian.spi,
                    org.jboss.as.osgi,
                    org.jboss.shrinkwrap.api,
                    javax.inject.api,
@@ -192,7 +187,6 @@
                    org.jboss.osgi.testing;version=1.0,
                    org.jboss.osgi.vfs;version=1.0,
 
-                   org.jboss.arquillian.api, org.jboss.arquillian.junit, org.jboss.arquillian.osgi,
                    org.jboss.shrinkwrap.api, org.jboss.shrinkwrap.api.asset, org.jboss.shrinkwrap.api.spec,
                    org.jboss.shrinkwrap.impl.base,
                    org.junit, org.junit.runner, javax.inject

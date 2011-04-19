@@ -206,7 +206,6 @@
     <modules>
         <module>build</module>
         <module>build-config</module>
-        <module>arquillian</module>
         <module>cli</module>
         <module>clustering</module>
         <module>connector</module>
@@ -2597,37 +2596,6 @@
                         <artifactId>shrinkwrap-impl-base</artifactId>
                     </exclusion>
               </exclusions>
-            </dependency>
-
-            <dependency>
-                <groupId>org.jboss.arquillian.testenricher</groupId>
-                <artifactId>arquillian-testenricher-cdi</artifactId>
-                <version>${version.org.jboss.arquillian}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.jboss.arquillian.testenricher</groupId>
-                <artifactId>arquillian-testenricher-jmx</artifactId>
-                <version>${version.org.jboss.arquillian}</version>
-            </dependency>
-
-
-            <dependency>
-                <groupId>org.jboss.arquillian.testenricher</groupId>
-                <artifactId>arquillian-testenricher-msc</artifactId>
-                <version>${version.org.jboss.arquillian}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.jboss.arquillian.testenricher</groupId>
-                <artifactId>arquillian-testenricher-osgi</artifactId>
-                <version>${version.org.jboss.arquillian}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.jboss.arquillian.testenricher</groupId>
-                <artifactId>arquillian-testenricher-resource</artifactId>
-                <version>${version.org.jboss.arquillian}</version>
             </dependency>
 
             <dependency>
