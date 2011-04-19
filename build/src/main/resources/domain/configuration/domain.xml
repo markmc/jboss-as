@@ -38,8 +38,7 @@
                             urn:jboss:domain:threads:1.0 jboss-threads.xsd
                             urn:jboss:domain:transactions:1.0 jboss-txn.xsd
                             urn:jboss:domain:web:1.0 jboss-web.xsd
-                            urn:jboss:domain:security:1.0 jboss-security.xsd
-                            urn:jboss:domain:weld:1.0 jboss-weld.xsd">
+                            urn:jboss:domain:security:1.0 jboss-security.xsd">
 
     <extensions>
         <extension module="org.jboss.as.connector"/>
@@ -57,7 +56,6 @@
         <extension module="org.jboss.as.threads"/>
         <extension module="org.jboss.as.transactions"/>
         <extension module="org.jboss.as.web"/>
-        <extension module="org.jboss.as.weld"/>
     </extensions>
 
     <profiles>
@@ -134,7 +132,6 @@
                  <jmx-connector registry-binding="jmx-connector-registry" server-binding="jmx-connector-server" />
             </subsystem>
             <subsystem xmlns="urn:jboss:domain:sar:1.0"/>
-            <subsystem xmlns="urn:jboss:domain:weld:1.0"/>
             <subsystem xmlns="urn:jboss:domain:connector:1.0">
                 <archive-validation enabled="true"/>
                 <bean-validation enabled="true"/>
