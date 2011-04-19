@@ -227,11 +227,6 @@
         </dependency>
 
         <dependency>
-           <groupId>org.jboss.as</groupId>
-           <artifactId>jboss-as-clustering</artifactId>
-        </dependency>
-
-        <dependency>
             <groupId>org.jboss.as</groupId>
             <artifactId>jboss-as-console</artifactId>
             <classifier>resources</classifier>
@@ -736,16 +731,6 @@
         <dependency>
           <groupId>org.hornetq</groupId>
           <artifactId>hornetq-jms</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.infinispan</groupId>
-            <artifactId>infinispan-core</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jgroups</groupId>
-            <artifactId>jgroups</artifactId>
         </dependency>
 
         <dependency>
