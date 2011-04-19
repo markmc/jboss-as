@@ -24,7 +24,6 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="urn:jboss:domain:1.0 jboss_7_0.xsd
                             urn:jboss:domain:ee:1.0 jboss-ee.xsd
-                            urn:jboss:domain:messaging:1.0 jboss-messaging.xsd
                             urn:jboss:domain:naming:1.0 jboss-naming.xsd
                             urn:jboss:domain:threads:1.0 jboss-threads.xsd
                             urn:jboss:domain:web:1.0 jboss-web.xsd
@@ -33,7 +32,6 @@
     <extensions>
         <extension module="org.jboss.as.logging"/>
         <extension module="org.jboss.as.ee"/>
-        <extension module="org.jboss.as.messaging"/>
         <extension module="org.jboss.as.naming"/>
         <extension module="org.jboss.as.security"/>
         <extension module="org.jboss.as.threads"/>
@@ -82,76 +80,6 @@
                     </security-domain>
                 </security-domains>
             </subsystem>
-            <subsystem xmlns="urn:jboss:domain:messaging:1.0">
-                <!-- Default journal file size is 10Mb, reduced here to 100k for faster first boot -->
-                <journal-file-size>102400</journal-file-size>
-                <journal-min-files>2</journal-min-files>
-                <journal-type>NIO</journal-type>
-                <!-- disable messaging persistence -->
-                <persistence-enabled>false</persistence-enabled>
-
-                <connectors>
-                    <in-vm-connector name="in-vm" server-id="0" />
-                    <netty-connector name="netty" socket-binding="messaging" />
-                    <netty-connector name="netty-throughput" socket-binding="messaging-throughput">
-                        <param key="batch-delay" value="50"/>
-                    </netty-connector>
-                </connectors>
-
-                <acceptors>
-                    <in-vm-acceptor name="in-vm" server-id="0" />
-                    <netty-acceptor name="netty" socket-binding="messaging" />
-                    <netty-acceptor name="netty-throughput" socket-binding="messaging-throughput">
-                        <param key="batch-delay" value="50"/>
-                        <param key="direct-deliver" value="false"/>
-                    </netty-acceptor>
-                </acceptors>
-
-                <security-settings>
-                    <security-setting match="#">
-                        <permission type="createNonDurableQueue" roles="guest"/>
-                        <permission type="deleteNonDurableQueue" roles="guest"/>
-                        <permission type="consume" roles="guest"/>
-                        <permission type="send" roles="guest"/>
-                    </security-setting>
-                </security-settings>
-
-                <address-settings>
-                    <!--default for catch all-->
-                    <address-setting match="#">
-                        <dead-letter-address>jms.queue.DLQ</dead-letter-address>
-                        <expiry-address>jms.queue.ExpiryQueue</expiry-address>
-                        <redelivery-delay>0</redelivery-delay>
-                        <max-size-bytes>10485760</max-size-bytes>
-                        <message-counter-history-day-limit>10</message-counter-history-day-limit>
-                        <address-full-policy>BLOCK</address-full-policy>
-                    </address-setting>
-                </address-settings>
-            </subsystem>
-            <subsystem xmlns="urn:jboss:domain:messaging:jms:1.0">
-               <connection-factory name="InVmConnectionFactory">
-                   <connectors>
-                       <connector-ref connector-name="in-vm" backup-connector-name="netty"/>
-                   </connectors>
-                  <entries>
-                       <entry name="java:/ConnectionFactory" />
-                  </entries>
-               </connection-factory>
-               <connection-factory name="RemoteConnectionFactory">
-                  <connectors>
-                       <connector-ref connector-name="netty" backup-connector-name="in-vm"/>
-                  </connectors>
-                  <entries>
-                       <entry name="RemoteConnectionFactory" />
-                  </entries>
-               </connection-factory>
-                <queue name="testQueue">
-                    <entry name="queue/test" />
-                </queue>
-                <topic name="testTopic">
-                    <entry name="topic/test" />
-                </topic>
-            </subsystem>
             <subsystem xmlns="urn:jboss:domain:web:1.0">
                <connector name="http" scheme="http" protocol="HTTP/1.1" socket-binding="http"/>
                <virtual-server name="localhost">
@@ -177,14 +105,9 @@
 
     <socket-binding-groups>
          <socket-binding-group name="standard-sockets" default-interface="external">
-            <include socket-binding-group="messaging-sockets"/>
             <socket-binding name="jndi" port="1099"/>
             <socket-binding name="http" port="8080"/>
             <socket-binding name="https" port="8447"/>
-         </socket-binding-group>
-         <socket-binding-group name="messaging-sockets" default-interface="external">
-            <socket-binding name="messaging" port="5445" />
-            <socket-binding name="messaging-throughput" port="5455"/>
          </socket-binding-group>
     </socket-binding-groups>
 
