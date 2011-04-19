@@ -227,7 +227,6 @@
         <module>sar</module>
         <module>security</module>
         <module>server</module>
-        <module>testsuite</module>
         <module>threads</module>
         <module>transactions</module>
         <module>web</module>
