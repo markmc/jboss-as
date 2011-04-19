@@ -25,7 +25,6 @@
         xsi:schemaLocation="urn:jboss:domain:1.0 jboss_7_0.xsd
                             urn:jboss:domain:connector:1.0 jboss-connector.xsd
                             urn:jboss:domain:datasources:1.0 jboss-datasources.xsd
-                            urn:jboss:domain:ejb3:1.0 jboss-ejb3.xsd
                             urn:jboss:domain:ee:1.0 jboss-ee.xsd
                             urn:jboss:domain:jmx:1.0 jboss-jmx.xsd
                             urn:jboss:domain:messaging:1.0 jboss-messaging.xsd
@@ -42,7 +41,6 @@
         <extension module="org.jboss.as.jmx"/>
         <extension module="org.jboss.as.logging"/>
         <extension module="org.jboss.as.ee"/>
-        <extension module="org.jboss.as.ejb3"/>
         <extension module="org.jboss.as.messaging"/>
         <extension module="org.jboss.as.naming"/>
         <extension module="org.jboss.as.remoting"/>
@@ -98,15 +96,8 @@
                     <max-threads count="10" per-cpu="20"/>
                     <keepalive-time time="10" unit="seconds"/>
                 </bounded-queue-thread-pool>
-                <bounded-queue-thread-pool name="ejb3-async" blocking="true">
-                    <core-threads count="10" per-cpu="20"/>
-                    <queue-length count="10" per-cpu="20"/>
-                    <max-threads count="10" per-cpu="20"/>
-                    <keepalive-time time="10" unit="seconds"/>
-                </bounded-queue-thread-pool>
             </subsystem>
             <subsystem xmlns="urn:jboss:domain:ee:1.0"/>
-            <subsystem xmlns="urn:jboss:domain:ejb3:1.0" />
             <subsystem xmlns="urn:jboss:domain:naming:1.0"/>
             <subsystem xmlns="urn:jboss:domain:security:1.0">
                 <security-domains>
