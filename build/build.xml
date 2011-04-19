@@ -279,10 +279,6 @@
 
         <module-def name="org.jboss.as.standalone"/>
 
-        <module-def name="org.jboss.as.transactions">
-            <maven-resource group="org.jboss.as" artifact="jboss-as-transactions"/>
-        </module-def>
-
         <module-def name="org.jboss.as.web">
             <maven-resource group="org.jboss.as" artifact="jboss-as-web"/>
             <maven-resource group="org.jboss.web" artifact="jasper-jdt"/>
@@ -305,24 +301,12 @@
             <maven-resource group="org.jboss" artifact="jboss-dmr"/>
         </module-def>
 
-        <module-def name="org.jboss.integration.jboss-transaction-spi">
-            <maven-resource group="org.jboss.integration" artifact="jboss-transaction-spi"/>
-        </module-def>
-
         <module-def name="org.jboss.invocation">
             <maven-resource group="org.jboss.invocation" artifact="jboss-invocation"/>
         </module-def>
 
         <module-def name="org.jboss.jandex">
             <maven-resource group="org.jboss" artifact="jandex"/>
-        </module-def>
-
-        <module-def name="org.jboss.jts">
-            <maven-resource group="org.jboss.jbossts" artifact="jbossjts"/>
-        </module-def>
-
-        <module-def name="org.jboss.jts.integration">
-            <maven-resource group="org.jboss.jbossts" artifact="jbossjts-integration"/>
         </module-def>
 
         <module-def name="org.jboss.logging">

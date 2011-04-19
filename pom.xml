@@ -224,7 +224,6 @@
         <module>security</module>
         <module>server</module>
         <module>threads</module>
-        <module>transactions</module>
         <module>web</module>
     </modules>
 
