@@ -54,7 +54,6 @@
         <module name="org.jboss.as.osgi"/>
         <module name="org.jboss.as.process-controller"/>
         <module name="org.jboss.as.protocol"/>
-        <module name="org.jboss.as.remoting"/>
         <module name="org.jboss.as.threads"/>
         <module name="org.jboss.as.transactions"/>
     </dependencies>
