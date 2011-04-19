@@ -217,7 +217,6 @@
         <module>ee</module>
         <module>embedded</module>
         <module>host-controller</module>
-        <module>jmx</module>
         <module>logging</module>
         <module>mc</module>
         <module>messaging</module>
