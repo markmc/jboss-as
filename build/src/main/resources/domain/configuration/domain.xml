@@ -39,7 +39,6 @@
                             urn:jboss:domain:transactions:1.0 jboss-txn.xsd
                             urn:jboss:domain:web:1.0 jboss-web.xsd
                             urn:jboss:domain:security:1.0 jboss-security.xsd
-                            urn:jboss:domain:webservices:1.0 jboss-webservices.xsd
                             urn:jboss:domain:weld:1.0 jboss-weld.xsd">
 
     <extensions>
@@ -59,7 +58,6 @@
         <extension module="org.jboss.as.transactions"/>
         <extension module="org.jboss.as.web"/>
         <extension module="org.jboss.as.weld"/>
-        <extension module="org.jboss.as.webservices" />
     </extensions>
 
     <profiles>
@@ -276,14 +274,6 @@
                   <alias name="example.com" />
                </virtual-server>
              </subsystem>
-           <subsystem xmlns="urn:jboss:domain:webservices:1.0">
-                <configuration>
-                 <webServiceHost>localhost</webServiceHost>
-                 <modifySOAPAddress>true</modifySOAPAddress>
-                 <!-- <webServiceSecurePort>8443</webServiceSecurePort>
-                    <webServicePort>8080</webServicePort> -->
-              </configuration>
-          </subsystem>
         </profile>
     </profiles>
 
