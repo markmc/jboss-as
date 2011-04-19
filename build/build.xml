@@ -311,10 +311,6 @@
             <maven-resource group="org.jboss.as" artifact="jboss-as-naming"/>
         </module-def>
 
-        <module-def name="org.jboss.as.osgi">
-            <maven-resource group="org.jboss.as" artifact="jboss-as-osgi-service"/>
-        </module-def>
-
         <module-def name="org.jboss.as.process-controller">
             <maven-resource group="org.jboss.as" artifact="jboss-as-process-controller"/>
         </module-def>
@@ -469,44 +465,8 @@
             <maven-resource group="org.jboss.netty" artifact="netty"/>
         </module-def>
 
-        <module-def name="org.jboss.osgi.deployment">
-            <maven-resource group="org.jboss.osgi.deployment" artifact="jbosgi-deployment"/>
-        </module-def>
-
-        <module-def name="org.jboss.osgi.framework">
-            <maven-resource group="org.jboss.osgi.framework" artifact="jbosgi-framework-core"/>
-        </module-def>
-
-        <module-def name="org.jboss.osgi.resolver">
-            <maven-resource group="org.jboss.osgi.resolver" artifact="jbosgi-resolver-api"/>
-            <maven-resource group="org.jboss.osgi.resolver" artifact="jbosgi-resolver-spi"/>
-            <maven-resource group="org.jboss.osgi.resolver" artifact="jbosgi-resolver-felix"/>
-            <maven-resource group="org.jboss.osgi.resolver" artifact="jbosgi-resolver-metadata"/>
-        </module-def>
-
-        <module-def name="org.jboss.osgi.spi">
-            <maven-resource group="org.jboss.osgi.spi" artifact="jbosgi-spi"/>
-        </module-def>
-
-        <module-def name="org.jboss.osgi.vfs">
-            <maven-resource group="org.jboss.osgi.vfs" artifact="jbosgi-vfs"/>
-            <maven-resource group="org.jboss.osgi.vfs" artifact="jbosgi-vfs30"/>
-        </module-def>
-
         <module-def name="org.jboss.remoting3">
             <maven-resource group="org.jboss.remoting3" artifact="jboss-remoting"/>
-        </module-def>
-
-        <module-def name="org.jboss.shrinkwrap.api">
-            <maven-resource group="org.jboss.shrinkwrap" artifact="shrinkwrap-api"/>
-        </module-def>
-
-        <module-def name="org.jboss.shrinkwrap.spi">
-            <maven-resource group="org.jboss.shrinkwrap" artifact="shrinkwrap-spi"/>
-        </module-def>
-
-        <module-def name="org.jboss.shrinkwrap.impl">
-            <maven-resource group="org.jboss.shrinkwrap" artifact="shrinkwrap-impl-base"/>
         </module-def>
 
         <module-def name="org.jboss.staxmapper">
@@ -535,10 +495,6 @@
 
         <module-def name="org.junit">
             <maven-resource group="junit" artifact="junit"/>
-        </module-def>
-
-        <module-def name="org.osgi.core">
-            <maven-resource group="org.osgi" artifact="org.osgi.core"/>
         </module-def>
 
         <module-def name="org.picketbox">
@@ -639,5 +595,5 @@
         <delete file="maven-ant-tasks.jar"/>
     </target>
 	
-    <target name="all" depends="clean-target, modules, bundles, copy-files, make-dirs"/>
+    <target name="all" depends="clean-target, modules, copy-files, make-dirs"/>
 </project>
