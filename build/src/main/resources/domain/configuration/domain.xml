@@ -33,7 +33,6 @@
                             urn:jboss:domain:naming:1.0 jboss-naming.xsd
                             urn:jboss:domain:remoting:1.0 jboss-remoting.xsd
                             urn:jboss:domain:resourceadapters:1.0 jboss-resource-adapters.xsd
-                            urn:jboss:domain:sar:1.0 jboss-sar.xsd
                             urn:jboss:domain:threads:1.0 jboss-threads.xsd
                             urn:jboss:domain:transactions:1.0 jboss-txn.xsd
                             urn:jboss:domain:web:1.0 jboss-web.xsd
@@ -49,7 +48,6 @@
         <extension module="org.jboss.as.messaging"/>
         <extension module="org.jboss.as.naming"/>
         <extension module="org.jboss.as.remoting"/>
-        <extension module="org.jboss.as.sar"/>
         <extension module="org.jboss.as.security"/>
         <extension module="org.jboss.as.threads"/>
         <extension module="org.jboss.as.transactions"/>
@@ -129,7 +127,6 @@
             <subsystem xmlns="urn:jboss:domain:jmx:1.0">
                  <jmx-connector registry-binding="jmx-connector-registry" server-binding="jmx-connector-server" />
             </subsystem>
-            <subsystem xmlns="urn:jboss:domain:sar:1.0"/>
             <subsystem xmlns="urn:jboss:domain:connector:1.0">
                 <archive-validation enabled="true"/>
                 <bean-validation enabled="true"/>

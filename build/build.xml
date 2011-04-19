@@ -323,10 +323,6 @@
             <maven-resource group="org.jboss.as" artifact="jboss-as-remoting"/>
         </module-def>
 
-        <module-def name="org.jboss.as.sar">
-            <maven-resource group="org.jboss.as" artifact="jboss-as-sar"/>
-        </module-def>
-
         <module-def name="org.jboss.as.server">
             <maven-resource group="org.jboss.as" artifact="jboss-as-server"/>
         </module-def>
