@@ -226,7 +226,6 @@
         <module>threads</module>
         <module>transactions</module>
         <module>web</module>
-        <module>weld</module>
     </modules>
 
     <build>

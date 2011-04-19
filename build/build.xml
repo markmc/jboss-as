@@ -74,14 +74,6 @@
             <maven-resource group="cglib" artifact="cglib" />
         </module-def>
 
-        <module-def name="ch.qos.cal10n">
-            <maven-resource group="ch.qos.cal10n" artifact="cal10n-api"/>
-        </module-def>
-
-        <module-def name="com.google.guava">
-            <maven-resource group="com.google.guava" artifact="guava" />
-        </module-def>
-
         <module-def name="com.h2database.h2">
             <maven-resource group="com.h2database" artifact="h2"/>
         </module-def>
@@ -383,10 +375,6 @@
             <maven-resource group="org.jboss.web" artifact="jbossweb"/>
         </module-def>
 
-        <module-def name="org.jboss.as.weld">
-            <maven-resource group="org.jboss.as" artifact="jboss-as-weld"/>
-        </module-def>
-
         <module-def name="org.jboss.as.threads">
             <maven-resource group="org.jboss.as" artifact="jboss-as-threads"/>
         </module-def>
@@ -432,14 +420,6 @@
 
         <module-def name="org.jboss.integration.jboss-transaction-spi">
             <maven-resource group="org.jboss.integration" artifact="jboss-transaction-spi"/>
-        </module-def>
-
-        <module-def name="org.jboss.interceptor">
-            <maven-resource group="org.jboss.interceptor" artifact="jboss-interceptor-core"/>
-        </module-def>
-
-        <module-def name="org.jboss.interceptor.spi">
-            <maven-resource group="org.jboss.interceptor" artifact="jboss-interceptor-spi"/>
         </module-def>
 
         <module-def name="org.jboss.invocation">
@@ -581,18 +561,6 @@
             <maven-resource group="org.jboss" artifact="jboss-vfs"/>
         </module-def>
 
-        <module-def name="org.jboss.weld.core">
-            <maven-resource group="org.jboss.weld" artifact="weld-core"/>
-        </module-def>
-
-        <module-def name="org.jboss.weld.api">
-            <maven-resource group="org.jboss.weld" artifact="weld-api"/>
-        </module-def>
-
-        <module-def name="org.jboss.weld.spi">
-            <maven-resource group="org.jboss.weld" artifact="weld-spi"/>
-        </module-def>
-
         <module-def name="org.jboss.xnio">
             <maven-resource group="org.jboss.xnio" artifact="xnio-api"/>
         </module-def>
@@ -627,10 +595,6 @@
 
         <module-def name="org.slf4j.impl">
             <maven-resource group="org.jboss.slf4j" artifact="slf4j-jboss-logmanager"/>
-        </module-def>
-
-        <module-def name="org.slf4j.ext">
-            <maven-resource group="org.slf4j" artifact="slf4j-ext"/>
         </module-def>
 
     </target>
