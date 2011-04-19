@@ -176,10 +176,6 @@
 
         <module-def name="javax.xml.stream.api"/>
 
-        <module-def name="jline">
-            <maven-resource group="jline" artifact="jline"/>
-        </module-def>
-
         <module-def name="org.apache.commons.logging"/>
 
         <module-def name="org.apache.log4j">
@@ -202,10 +198,6 @@
 
         <module-def name="org.hibernate.validator">
             <maven-resource group="org.hibernate" artifact="hibernate-validator"/>
-        </module-def>
-
-        <module-def name="org.jboss.as.cli">
-            <maven-resource group="org.jboss.as" artifact="jboss-as-cli"/>
         </module-def>
 
         <module-def name="org.jboss.as.controller">
@@ -346,10 +338,6 @@
 
         <module-def name="org.jboss.vfs">
             <maven-resource group="org.jboss" artifact="jboss-vfs"/>
-        </module-def>
-
-        <module-def name="org.junit">
-            <maven-resource group="junit" artifact="junit"/>
         </module-def>
 
         <module-def name="org.picketbox">
