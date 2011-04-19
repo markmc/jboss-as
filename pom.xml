@@ -216,7 +216,6 @@
         <module>mc</module>
         <module>messaging</module>
         <module>naming</module>
-        <module>osgi</module>
         <module>process-controller</module>
         <module>protocol</module>
         <module>remoting</module>
